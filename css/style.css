@@ -16,41 +16,47 @@ body {
     background: var(--dark);
     color: var(--bright);
     font-size: 25px;
-    font-family: 'Spartan', sans-serif;
+    font-weight: 200;
+    font-family: 'Josefin Sans', sans-serif;
     overflow-x: hidden;
 }
 header, article {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 article {
     padding: 2rem;
 }
-.flex {
-    display: flex;
-    gap: 2rem;
-}
 .navigation {
+    width: 100vw;
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid var(--bright);
+    padding: 0 3rem 0 3rem;
 }
 .socials {
     display: flex;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1rem;
+}
+.socials i:hover {
+    color: var(--mainColor);
+    transition: color 350ms ease-in-out;
 }
 .navigation ul {
     display: flex;
-    padding: 2rem;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
 }
 .navigation a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 3rem 0.5rem 3rem 0.5rem;
     text-decoration: none;
     color: var(--bright);
 }
@@ -58,7 +64,7 @@ article {
     color: var(--mainColor);
     transition: color 350ms ease-in-out;
 }
-.navigation a>i {
+.navigation li>a>i {
     display: none;
 }
 article {
@@ -79,10 +85,15 @@ footer {
     .navigation {
         width: 100vw;
         position: fixed;
+        top: unset;
         bottom: 0;
         padding: 0;
+        gap: 1rem;
         justify-content: center;
         background: var(--darker);
+        border-top: 1px solid var(--bright);
+        border-bottom: none;
     }
+    .navigation a { padding: 2rem 0.3rem 2rem 0.3rem; }
     footer { padding-bottom: calc(1rem + 4.5rem); }
 }
