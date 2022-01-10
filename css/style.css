@@ -26,15 +26,6 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     overflow-x: hidden;
 }
-/* header, article {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-article {
-    padding: 2rem;
-}
 .text--primary { color: var(--primaryColor); }
 .navigation {
     width: 100vw;
