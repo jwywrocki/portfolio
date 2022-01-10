@@ -38,7 +38,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 3rem 0 3rem;
-    transition: 350ms ease-in-out;
+    transition: top 350ms ease-in-out;
 }
 .navigation__logo {
     display: flex;
@@ -154,15 +154,11 @@ footer {
         border-top: 1px solid var(--bright);
         border-bottom: none;
     }
+    .navigation__container {gap: 0rem;}
     footer { padding: 2rem 2rem calc(2rem + var(--navHeight)) 2rem; }
 }
-@media ( max-width: 400px ) {
+@media ( max-width: 450px ) {
     body { font-size: 0.8rem; }
     .navigation__item { padding: 0.7rem; }
     .button--primary { padding: 0.7rem;}
-}
-@media ( max-width: 350px ) {
-    body { font-size: 0.7rem; }
-    .navigation__item { padding: 0.4rem; }
-    .button--primary { padding: 0.4rem;}
 }
