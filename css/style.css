@@ -100,9 +100,6 @@ body {
     background-color: var(--primaryColor);
     color: var(--bright);
 }
-.navigation li>a>i {
-    display: none;
-}
 .header {
     display: flex;
     gap: 4rem;
@@ -135,6 +132,7 @@ body {
 .socials__link {
     text-decoration: none;
     color: var(--bright);
+    transition: color 350ms ease-in-out;
 }
 @media (hover :hover)
 {
@@ -167,13 +165,13 @@ section {
     flex-direction: column;
     gap: 2rem;
 }
-.image__container {
+.about__image-container {
     display: flex;
     position: relative;
     background: var(--bright);
     box-shadow: 0 0 20px 8px var(--darker);
 }
-.image__container::before {
+.about__image-container::before {
     content: '';
     position: absolute;
     top: 1rem;
@@ -184,35 +182,65 @@ section {
     z-index: -1;
     transition: 350ms ease-in-out;
 }
-.image__container:hover::before {
-    top: 0;
-    right: 0;
+.about__image-container:hover::before {
+    top: -1rem;
+    right: -1rem;
 }
 .about__image {
+    position: relative;
     width: min(15vw, 15rem);
     min-width: 6rem;
 }
 .projects__container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    display: none;
 }
 .projects__card {
+    gap: 2rem;
+    position: relative;
     display: flex;
-    gap: 2rem
+    justify-content: center;
+    align-items: center;
+}
+.projects__card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--dark);
+    opacity: 0.55;
+    transition: opacity 350ms ease-in-out;
+}
+@media (hover :hover)
+{
+    .projects__card:hover::before {
+        opacity: 0;
+    }
+}
+.card__image {
+    max-width: 100%;
 }
 .card__text {
     display: flex;
-    width: 20rem;
-    background: var(--bright);
-    color: var(--dark);
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--bright);
 }
 footer {
     display: flex;
     justify-content: center;
     padding: 4rem;
     background: var(--darker);;
+}
+@media ( max-width: 1200px ) {
+    .projects__container {
+        grid-template-columns: 1fr;
+    }
 }
 @media ( max-width: 800px ) {
     body { font-size: 1rem; }
