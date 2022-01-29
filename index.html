@@ -1,101 +1,170 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;600&family=Spartan:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="./img/icon.ico" type="image/x-icon">
-    <title>Jakub Wywrocki - Portfolio</title>
-</head>
-<body>
-    <!-- <i class="fas fa-arrow-circle-up scrollTop"></i> -->
-    <nav class="navigation">
-        <a href="#">
-            <svg class="navigation__logo" role="img" version="1.0" xmlns="http://www.w3.org/2000/svg"
-            width="200.000000pt" height="225.000000pt" viewBox="0 0 200.000000 225.000000"
-            preserveAspectRatio="xMidYMid meet">
-                <title>Logo</title>
-                <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
-                fill="currentColor" stroke="none">
-                    <path d="M535 1935 l-470 -272 0 -542 0 -543 465 -269 c256 -148 470 -269 475
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;600&family=Spartan:wght@200&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link rel="icon" href="./img/icon.ico" type="image/x-icon" />
+        <title>Jakub Wywrocki - Portfolio</title>
+    </head>
+    <body>
+        <!-- <i class="fas fa-arrow-circle-up scrollTop"></i> -->
+        <nav class="navigation">
+            <a href="#">
+                <svg
+                    class="navigation__logo"
+                    role="img"
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="200.000000pt"
+                    height="225.000000pt"
+                    viewBox="0 0 200.000000 225.000000"
+                    preserveAspectRatio="xMidYMid meet"
+                >
+                    <title>Logo</title>
+                    <g
+                        transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
+                        fill="currentColor"
+                        stroke="none"
+                    >
+                        <path
+                            d="M535 1935 l-470 -272 0 -542 0 -543 465 -269 c256 -148 470 -269 475
                     -269 6 0 219 121 475 269 l465 269 0 543 0 543 -245 141 c-135 78 -346 200
                     -470 271 l-225 130 -470 -271z m865 -129 l385 -223 0 -462 0 -462 -389 -225
                     c-213 -123 -389 -224 -391 -224 -2 0 -178 101 -391 224 l-389 225 0 462 0 462
-                    385 223 c212 123 390 223 395 223 6 0 183 -100 395 -223z"/>
-                    <path d="M780 1480 l0 -50 155 0 155 0 0 -267 c0 -294 -2 -301 -60 -341 -30
+                    385 223 c212 123 390 223 395 223 6 0 183 -100 395 -223z"
+                        />
+                        <path
+                            d="M780 1480 l0 -50 155 0 155 0 0 -267 c0 -294 -2 -301 -60 -341 -30
                     -21 -43 -23 -97 -19 -41 3 -80 14 -113 31 l-50 26 0 -55 0 -56 48 -22 c34 -15
                     68 -21 122 -21 94 -1 156 22 204 74 60 67 66 105 66 447 l0 303 -215 0 -215 0
-                    0 -50z"/>
-                </g>
-            </svg>
-        </a>
-        <ul class="navigation__container">
-            <li><a href="#about" class="navigation__item"><i class="far fa-address-card"></i>About me</a></li>
-            <li><a href="#projects" class="navigation__item"><i class="fas fa-tasks"></i>Projects</a></li>
-            <li><a href="#contact" class="navigation__item"><i class="far fa-envelope"></i>Contact</a></li>
-            <li>
-                <a href="./Jakub_Wywrocki_CV.pdf" class="button--primary">Resume</a>
-            </li>
-        </ul>
-    </nav>
-    <header class="header">
-        <div class="header__text">
-            <h1>Hi, my name is <span class="text--primary">Jakub</span>.</h1>
-            <h2>I have <span class="text--primary">BS degree in IT</span> and I am a <span class="text--primary">Junior</span> Front-end Developer with MERN stack basics.</h2>
-        </div>
-        <a href="#projects" class="button--primary">Check out my projects!</a>
-        <div class="header__socials">
-            <a href="https://www.linkedin.com/in/jakub-wywrocki-503a0122a" class="socials__link"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/jwywrocki" class="socials__link"><i class="fab fa-github"></i></a>
-        </div>
-    </header>
-    <main class="content">
-        <section id="about" class="about">
-            <div class="about__text">
-                <h1>About me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quaerat sint animi ut illum obcaecati deleniti. Ut, deleniti porro. Error non vel animi incidunt sunt!</p>
+                    0 -50z"
+                        />
+                    </g>
+                </svg>
+            </a>
+            <ul class="navigation__container">
+                <li><a href="#about" class="navigation__item">About me</a></li>
+                <li>
+                    <a href="#projects" class="navigation__item">Projects</a>
+                </li>
+                <li><a href="#contact" class="navigation__item">Contact</a></li>
+                <li>
+                    <a href="./Jakub_Wywrocki_CV.pdf" class="button--primary"
+                        >Resume</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__text">
+                <h1>
+                    Hi, my name is <span class="text--primary">Jakub</span>.
+                </h1>
+                <h2>
+                    I have
+                    <span class="text--primary">BS degree in IT</span> and I am
+                    a <span class="text--primary">Junior</span> Front-end
+                    Developer with MERN stack basics.
+                </h2>
             </div>
-            <div class="image__container">
-                <img src="./img/img.png" class="about__image" alt="Photograph">
+            <a href="#projects" class="button--primary"
+                >Check out my projects!</a
+            >
+            <div class="header__socials">
+                <a
+                    href="https://www.linkedin.com/in/jakub-wywrocki-503a0122a"
+                    class="socials__link"
+                    ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="https://github.com/jwywrocki" class="socials__link"
+                    ><i class="fab fa-github"></i
+                ></a>
             </div>
-        </section>
-        <section id="projects" class="projects">
-            <h1>Some of my projects</h1>
-            <div class="projects__container">
-                <div class="projects__card">
-                    <img src="./img/projects/task_1.png" class="card__image" alt="Project task_1 screenshot">
-                    <div class="card__text">
-                        <h2 class="card__title">Task 1</h2>
+        </header>
+        <main class="content">
+            <section id="about" class="about">
+                <div class="about__text">
+                    <h1>About me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nam quaerat sint animi ut illum obcaecati deleniti. Ut,
+                        deleniti porro. Error non vel animi incidunt sunt!
+                    </p>
+                </div>
+                <div class="about__image-container">
+                    <img
+                        src="./img/img.png"
+                        class="about__image"
+                        alt="Photograph"
+                    />
+                </div>
+            </section>
+            <section id="projects" class="projects">
+                <h1>Some of my projects</h1>
+                <div class="projects__container">
+                    <div class="projects__card">
+                        <div class="card__image">
+                            <img
+                                src="./img/projects/task_1.png"
+                                alt="Project task_1 screenshot"
+                            />
+                        </div>
+                        <div class="card__text">
+                            <h2 class="card__title">Task 1</h2>
+                            <span>Description</span>
+                            <span>Tech stack</span>
+                        </div>
+                    </div>
+                    <div class="projects__card">
+                        <div class="card__image">
+                            <img
+                                src="./img/projects/task_2.png"
+                                alt="Project task_2 screenshot"
+                            />
+                        </div>
+                        <div class="card__text">
+                            <h2 class="card__title">Task 2</h2>
+                        </div>
+                    </div>
+                    <div class="projects__card">
+                        <div class="card__image">
+                            <img
+                                src="./img/projects/task_1.png"
+                                alt="Project task_3 screenshot"
+                            />
+                        </div>
+                        <div class="card__text">
+                            <h2 class="card__title">Task 3</h2>
+                        </div>
+                    </div>
+                    <div class="projects__card">
+                        <div class="card__image">
+                            <img
+                                src="./img/projects/task_1.png"
+                                alt="Project task_4 screenshot"
+                            />
+                        </div>
+                        <div class="card__text">
+                            <h2 class="card__title">Task 4</h2>
+                        </div>
                     </div>
                 </div>
-                <div class="projects__card">
-                    <img src="./img/projects/task_1.png" class="card__image" alt="Project task_1 screenshot">
-                    <div class="card__text">
-                        <h2 class="card__title">Task 2</h2>
-                    </div>
-                </div>
-                <div class="projects__card">
-                    <img src="./img/projects/task_1.png" class="card__image" alt="Project task_1 screenshot">
-                    <div class="card__text">
-                        <h2 class="card__title">Task 3</h2>
-                    </div>
-                </div>
-                <div class="projects__card">
-                    <img src="./img/projects/task_1.png" class="card__image" alt="Project task_1 screenshot">
-                    <div class="card__text">
-                        <h2 class="card__title">Task 4</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="contact">
-            <h1>Contact</h1>
-        </section>
-    </main>
-    <footer>© 2022 Jakub Wywrocki</footer>
-    <script src="js/main.js"></script>
-</body>
+            </section>
+            <section id="contact" class="contact">
+                <h1>Contact</h1>
+            </section>
+        </main>
+        <footer>© 2022 Jakub Wywrocki</footer>
+        <script src="js/main.js"></script>
+    </body>
 </html>
