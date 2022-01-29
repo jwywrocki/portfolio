@@ -197,13 +197,15 @@ section {
 }
 .projects__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 40rem);
+    grid-template-columns: repeat(auto-fill, 50rem);
     gap: 2rem;
+    justify-content: center;
     width: 100%;
 }
 .projects__card {
     display: flex;
     background: var(--darker);
+    box-shadow: 0 10px 15px 0 var(--darker);
 }
 @media (hover: hover) {
     .projects__card:hover::before {
@@ -216,7 +218,7 @@ section {
 }
 .card__image img {
     min-width: 100%;
-    height: 15rem;
+    height: 20rem;
     object-fit: cover;
 }
 .card__text {
