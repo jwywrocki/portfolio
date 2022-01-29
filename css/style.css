@@ -152,7 +152,7 @@ body {
     flex-direction: column;
     padding: var(--contentPadding);
 }
-section {
+.content__section {
     display: flex;
     gap: 2rem;
     flex-direction: column;
@@ -215,16 +215,12 @@ section {
 }
 .card__image {
     display: flex;
-    overflow: hidden;
-    height: 14rem;
+    min-height: 14rem;
     position: relative;
 }
 .card__image > img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
+    object-fit: cover;
 }
 .card__info {
     display: flex;
@@ -264,6 +260,12 @@ footer {
     }
     .header__socials {
         display: none;
+    }
+    .content {
+        padding: 0 1rem;
+    }
+    .content__section {
+        margin: 0 1rem;
     }
     .about {
         flex-direction: column;
