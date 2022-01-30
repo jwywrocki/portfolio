@@ -14,5 +14,8 @@ window.onscroll = function () {
             : (document.querySelector(".navigation").style.bottom =
                   root.getPropertyValue("--navHeightNegative"));
         scrollPosition = currentScrollPosition;
+        window.innerHeight + currentScrollPosition >= document.body.offsetHeight
+            ? (document.querySelector(".navigation").style.bottom = "0")
+            : null;
     }
 };

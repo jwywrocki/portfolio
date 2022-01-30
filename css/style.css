@@ -1,19 +1,19 @@
 :root {
     --bright: #f5f5f5;
-    --dark: #1c1c1c;
-    --darker: #161616;
+    --dark: #05090c;
+    --backgroundColor: #0b1218;
+    --darkBackgroundColor: #090f14;
     --primaryColor: #00efff;
-    /* #ffe600
-    #14a76c
-    #ff652f
-    #3584ce
-    #00ffff */
+    /*--dark: #120f0c;
+    --backgroundColor: #201913;
+    --darkBackgroundColor: #2e2925;*/
     --navHeight: 8rem;
     --navHeightMobile: 6rem;
     --navHeightNegative: calc(-1 * var(--navHeight));
     --contentHorizontalPadding: 0 min(10vw, 10rem);
     --contentHorizontalMargin: 0 min(10vw, 10rem);
     --contentVerticalPadding: min(1vw, 2rem) 0;
+    --gap: 2rem;
 }
 *,
 *::before,
@@ -28,7 +28,7 @@ html {
 }
 body {
     min-height: 100vh;
-    background: var(--dark);
+    background: var(--backgroundColor);
     color: var(--bright);
     font-size: 25px;
     font-weight: 200;
@@ -42,7 +42,7 @@ body {
     width: 100vw;
     height: var(--navHeight);
     position: sticky;
-    background-color: var(--dark);
+    background-color: var(--backgroundColor);
     top: 0;
     display: flex;
     align-items: center;
@@ -102,12 +102,12 @@ body {
 @media (hover: hover) {
     .button--primary:hover {
         background-color: var(--primaryColor);
-        color: var(--darker);
+        color: var(--darkBackgroundColor);
     }
 }
 .button--primary:active {
     background-color: var(--primaryColor);
-    color: var(--darker);
+    color: var(--darkBackgroundColor);
 }
 .header {
     display: flex;
@@ -128,7 +128,7 @@ body {
     left: min(8vw, 10rem);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--gap);
 }
 .header__socials::after {
     content: "";
@@ -159,7 +159,7 @@ body {
 }
 .content__section {
     display: flex;
-    gap: 2rem;
+    gap: var(--gap);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -185,19 +185,24 @@ body {
 .about {
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
+}
+.about__info {
+    display: flex;
+    gap: var(--gap);
 }
 .about__text {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--gap);
 }
-.about__image-container {
+.about__image {
     display: flex;
     position: relative;
     background: var(--bright);
-    box-shadow: 0 0 20px 8px var(--darker);
+    box-shadow: 0 10px 15px 0 var(--dark);
 }
-.about__image-container::before {
+.about__image::before {
     content: "";
     position: absolute;
     top: 1rem;
@@ -208,27 +213,33 @@ body {
     z-index: -1;
     transition: 250ms ease-in-out;
 }
-.about__image-container:hover::before {
+.about__image:hover::before {
     top: -1rem;
     right: -1rem;
 }
-.about__image {
+.about__image > img {
     position: relative;
     width: min(15vw, 15rem);
     min-width: 6rem;
 }
+.about__links {
+    display: flex;
+    justify-content: end;
+    gap: var(--gap);
+    width: 100%;
+}
 .projects__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 30rem);
-    gap: 2rem;
+    gap: var(--gap);
     justify-content: center;
     width: 100%;
 }
 .projects__card {
     display: flex;
     flex-direction: column;
-    background: var(--darker);
-    box-shadow: 0 10px 15px 0 var(--darker);
+    background: var(--darkBackgroundColor);
+    box-shadow: 0 10px 15px 0 var(--dark);
 }
 @media (hover: hover) {
     .projects__card:hover::before {
@@ -262,7 +273,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 4rem;
-    background: var(--darker);
+    background: var(--darkBackgroundColor);
 }
 @media (max-width: 1200px) {
     .projects__container {
@@ -282,8 +293,8 @@ footer {
         padding: 0;
         gap: 0.5rem;
         justify-content: center;
-        background: var(--darker);
-        border-top: 1px solid var(--bright);
+        background: var(--darkBackgroundColor);
+        border-top: 1px solid var(--primaryColor);
         border-bottom: none;
         transition: bottom 250ms ease-in-out;
     }
@@ -300,7 +311,7 @@ footer {
     .about {
         flex-direction: column;
     }
-    .about__image-container {
+    .about__image {
         align-self: center;
     }
     footer {
