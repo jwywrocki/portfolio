@@ -199,6 +199,7 @@ body {
 .about__image {
     display: flex;
     position: relative;
+    height: fit-content;
     background: var(--bright);
     box-shadow: 0 10px 15px 0 var(--dark);
 }
@@ -308,7 +309,7 @@ footer {
         padding: 0 0.75rem;
         margin: 0 0.75rem;
     }
-    .about {
+    .about__info {
         flex-direction: column;
     }
     .about__image {
