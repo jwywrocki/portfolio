@@ -2,9 +2,12 @@
     --bright: #f5f5f5;
     --dark: #1c1c1c;
     --darker: #161616;
-    --primaryColor: #ff652f;
-    --secondaryColor: #ffe600;
-    --tertiaryColor: #14a76c;
+    --primaryColor: #00efff;
+    /* #ffe600
+    #14a76c
+    #ff652f
+    #3584ce
+    #00ffff */
     --navHeight: 8rem;
     --navHeightMobile: 6rem;
     --navHeightNegative: calc(-1 * var(--navHeight));
@@ -99,12 +102,12 @@ body {
 @media (hover: hover) {
     .button--primary:hover {
         background-color: var(--primaryColor);
-        color: var(--bright);
+        color: var(--darker);
     }
 }
 .button--primary:active {
     background-color: var(--primaryColor);
-    color: var(--bright);
+    color: var(--darker);
 }
 .header {
     display: flex;
@@ -282,6 +285,7 @@ footer {
         background: var(--darker);
         border-top: 1px solid var(--bright);
         border-bottom: none;
+        transition: bottom 250ms ease-in-out;
     }
     .navigation__container {
         gap: 0rem;
@@ -290,11 +294,14 @@ footer {
         display: none;
     }
     .content {
-        padding: 0 0.5rem;
-        margin: 0 0.5rem;
+        padding: 0 0.75rem;
+        margin: 0 0.75rem;
     }
     .about {
         flex-direction: column;
+    }
+    .about__image-container {
+        align-self: center;
     }
     footer {
         padding: 2rem 2rem calc(2rem + var(--navHeightMobile)) 2rem;
