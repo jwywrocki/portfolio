@@ -327,7 +327,8 @@ footer {
         padding: 1.5rem;
     }
     footer {
-        padding: 2rem 2rem calc(2rem + var(--navHeightMobile)) 2rem;
+        padding: 2rem;
+        /* padding: 2rem 2rem calc(2rem + var(--navHeightMobile)) 2rem; */
     }
 }
 @media (max-width: 450px) {
