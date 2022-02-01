@@ -299,6 +299,11 @@ footer {
     padding: 4rem;
     background: var(--darkBackgroundColor);
 }
+@media (max-width: 2000px) {
+    .about {
+        margin: 0;
+    }
+}
 @media (max-width: 1280px) {
     body {
         font-size: 1.4rem;
