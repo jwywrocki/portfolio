@@ -391,14 +391,14 @@ footer {
     }
 }
 @media (max-width: 450px) {
-    .navigation__item {
+    .navigation__link {
         padding: 0.7rem 0.4rem;
     }
     .button--primary {
         padding: 0.5rem;
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     body {
         font-size: 0.95rem;
     }
