@@ -17,8 +17,9 @@
         <title>Jakub Wywrocki - Portfolio</title>
     </head>
     <body>
+        <a class="skip link--primary" href="#content"> Skip to content </a>
         <nav class="navigation">
-            <a href="#">
+            <a href="#" class="link--primary">
                 <svg
                     class="navigation__logo"
                     role="img"
@@ -52,13 +53,26 @@
                 </svg>
             </a>
             <ul class="navigation__container">
-                <li><a href="#about" class="navigation__item">About me</a></li>
-                <li>
-                    <a href="#projects" class="navigation__item">Projects</a>
+                <li class="navigation__item">
+                    <a href="#about" class="navigation__link link--primary">
+                        About me
+                    </a>
                 </li>
-                <li><a href="#contact" class="navigation__item">Contact</a></li>
-                <li>
-                    <a href="./Jakub_Wywrocki_CV.pdf" class="button--primary">
+                <li class="navigation__item">
+                    <a href="#projects" class="navigation__link link--primary">
+                        Projects
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#contact" class="navigation__link link--primary">
+                        Contact
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a
+                        href="./Jakub_Wywrocki_CV.pdf"
+                        class="button--primary link--primary"
+                    >
                         Resume
                     </a>
                 </li>
@@ -76,22 +90,25 @@
                     Developer with MERN stack basic knowledge.
                 </h2>
             </div>
-            <a href="#projects" class="button--primary">
+            <a href="#projects" class="button--primary link--primary">
                 Check out my projects!
             </a>
-            <div class="header__socials">
+        </header>
+        <main id="content" class="content">
+            <div class="socials">
                 <a
                     href="https://www.linkedin.com/in/jwywrocki"
-                    class="socials__link"
+                    class="socials__link link--primary"
                 >
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/jwywrocki" class="socials__link">
+                <a
+                    href="https://github.com/jwywrocki"
+                    class="socials__link link--primary"
+                >
                     <i class="fab fa-github"></i>
                 </a>
             </div>
-        </header>
-        <main class="content">
             <section id="about" class="about content__section">
                 <h1 class="section__title">About me</h1>
                 <div class="about__info">
@@ -111,7 +128,11 @@
                             my studies with a bachelor's degree in computer
                             science I keep learning and looking for job. If you
                             are intersted in my person
-                            <a href="#contact" class="text--primary">contact</a>
+                            <a
+                                href="#contact"
+                                class="text--primary link--primary"
+                                >contact</a
+                            >
                             with me.
                         </p>
                     </div>
@@ -122,14 +143,14 @@
                 <div class="about__links">
                     <a
                         href="https://github.com/jwywrocki"
-                        class="button--primary"
+                        class="button--primary link--primary"
                     >
                         Vist me on GitHub
                         <i class="fab fa-github"></i>
                     </a>
                     <a
                         href="https://www.linkedin.com/in/jwywrocki"
-                        class="button--primary"
+                        class="button--primary link--primary"
                     >
                         Vist me on LinkedIn
                         <i class="fab fa-linkedin-in"></i>
@@ -167,14 +188,14 @@
                                 <a
                                     href="https://github.com/jwywrocki/task_1"
                                     target="_blank"
-                                    class="button--primary"
+                                    class="button--primary link--primary"
                                 >
                                     <i class="fab fa-github"></i>
                                 </a>
                                 <a
                                     href="https://jwywrocki.github.io/task_1/"
                                     target="_blank"
-                                    class="button--primary"
+                                    class="button--primary link--primary"
                                 >
                                     <i class="fas fa-globe-americas"></i>
                                 </a>
@@ -207,14 +228,14 @@
                                 <a
                                     href="https://github.com/jwywrocki/task_2"
                                     target="_blank"
-                                    class="button--primary"
+                                    class="button--primary link--primary"
                                 >
                                     <i class="fab fa-github"></i>
                                 </a>
                                 <a
                                     href="https://jwywrocki.github.io/task_2/"
                                     target="_blank"
-                                    class="button--primary"
+                                    class="button--primary link--primary"
                                 >
                                     <i class="fas fa-globe-americas"></i>
                                 </a>
@@ -246,14 +267,14 @@
                                 <a
                                     href="https://github.com/jwywrocki/random-quote-generator"
                                     target="_blank"
-                                    class="button--primary"
+                                    class="button--primary link--primary"
                                 >
                                     <i class="fab fa-github"></i>
                                 </a>
                                 <a
                                     href="https://jwywrocki.github.io/random-quote-generator/"
                                     target="_blank"
-                                    class="button--primary"
+                                    class="button--primary link--primary"
                                 >
                                     <i class="fas fa-globe-americas"></i>
                                 </a>
@@ -283,14 +304,14 @@
                                 <a
                                     href="https://github.com/jwywrocki/task_4"
                                     target="_blank"
-                                    class="button--primary"
+                                    class="button--primary link--primary"
                                 >
                                     <i class="fab fa-github"></i>
                                 </a>
                                 <a
                                     href="https://jwywrocki.github.io/task_4/"
                                     target="_blank"
-                                    class="button--primary"
+                                    class="button--primary link--primary"
                                 >
                                     <i class="fas fa-globe-americas"></i>
                                 </a>
@@ -303,12 +324,15 @@
                 <h1 class="section__title">Contact</h1>
                 Contact form will appear here soon for now you can reach me via
                 <div class="contact__links">
-                    <a href="mailto:jaqb1991@gmail.com" class="button--primary"
-                        ><i class="fas fa-at"></i
-                    ></a>
+                    <a
+                        href="mailto:jaqb1991@gmail.com"
+                        class="button--primary link--primary"
+                    >
+                        <i class="fas fa-at"></i>
+                    </a>
                     <a
                         href="https://www.linkedin.com/in/jwywrocki"
-                        class="button--primary"
+                        class="button--primary link--primary"
                     >
                         <i class="fab fa-linkedin-in"></i>
                     </a>
