@@ -260,10 +260,16 @@ body {
     flex: 1;
 }
 .card__tech {
+    display: flex;
+    flex-direction: column;
     position: relative;
     flex: 1;
+    justify-content: end;
 }
-.card__tech::before {
+.card__tech--pointer {
+    position: relative;
+}
+.card__tech--pointer::before {
     content: "";
     position: absolute;
     inset: 0.46rem 0 0 -2rem;
