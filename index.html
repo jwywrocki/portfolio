@@ -16,68 +16,49 @@
         <link rel="icon" href="./img/icon.ico" type="image/x-icon" />
         <title>Jakub Wywrocki - Portfolio</title>
     </head>
-    <body>
+    <body class="wrapper preload">
         <a class="skip link--primary" href="#content"> Skip to content </a>
         <nav class="navigation">
-            <a href="#" class="link--primary">
-                <svg
-                    class="navigation__logo"
-                    role="img"
-                    version="1.0"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="200.000000pt"
-                    height="225.000000pt"
-                    viewBox="0 0 200.000000 225.000000"
-                    preserveAspectRatio="xMidYMid meet"
-                >
-                    <title>Logo</title>
-                    <g
-                        transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
-                        fill="currentColor"
-                        stroke="none"
-                    >
-                        <path
-                            d="M535 1935 l-470 -272 0 -542 0 -543 465 -269 c256 -148 470 -269 475
-                    -269 6 0 219 121 475 269 l465 269 0 543 0 543 -245 141 c-135 78 -346 200
-                    -470 271 l-225 130 -470 -271z m865 -129 l385 -223 0 -462 0 -462 -389 -225
-                    c-213 -123 -389 -224 -391 -224 -2 0 -178 101 -391 224 l-389 225 0 462 0 462
-                    385 223 c212 123 390 223 395 223 6 0 183 -100 395 -223z"
-                        />
-                        <path
-                            d="M780 1480 l0 -50 155 0 155 0 0 -267 c0 -294 -2 -301 -60 -341 -30
-                    -21 -43 -23 -97 -19 -41 3 -80 14 -113 31 l-50 26 0 -55 0 -56 48 -22 c34 -15
-                    68 -21 122 -21 94 -1 156 22 204 74 60 67 66 105 66 447 l0 303 -215 0 -215 0
-                    0 -50z"
-                        />
-                    </g>
-                </svg>
-            </a>
-            <ul class="navigation__container">
-                <li class="navigation__item">
-                    <a href="#about" class="navigation__link link--primary"> About me </a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#projects" class="navigation__link link--primary"> Projects </a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#contact" class="navigation__link link--primary"> Contact </a>
-                </li>
-                <li class="navigation__item">
-                    <a href="./Jakub_Wywrocki_CV.pdf" class="button--primary link--primary">
-                        Resume
-                    </a>
-                </li>
-            </ul>
+            <div class="navigation__wrapper">
+                <a href="#" class="navigation__logo link--primary">
+                    <div class="navigation__logo-img"></div>
+                </a>
+                <ul class="navigation__container">
+                    <li class="navigation__item">
+                        <a href="#about" class="navigation__link link--primary">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="navigation__link-text">About me</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#projects" class="navigation__link link--primary">
+                            <i class="fa-solid fa-code"></i>
+                            <span class="navigation__link-text">Projects</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#contact" class="navigation__link link--primary">
+                            <i class="fa-solid fa-address-card"></i>
+                            <span class="navigation__link-text">Contact</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="./Jakub_Wywrocki_CV.pdf" class="button--primary link--primary">
+                            Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="fa-solid fa-sun theme_toggle" id="toggle"></div>
         <header class="header">
             <div class="header__text">
-                <h1>Hi, my name is <span class="text--primary">Jakub</span>.</h1>
+                <h1>Hi, I'm <span class="text--primary">Jakub</span>.</h1>
                 <h2>
                     I have
-                    <span class="text--primary">BS degree in IT</span> and I am a
-                    <span class="text--primary">Junior</span> Front-end Developer with MERN stack
-                    basic knowledge.
+                    <span class="text--primary">BS degree in IT</span> and I'm a
+                    <span class="text--primary">Junior</span> Front-end Developer with basic MERN stack
+                    knowledge.
                 </h2>
             </div>
             <a href="#projects" class="button--primary link--primary"> Check out my projects! </a>
@@ -91,28 +72,20 @@
                     <i class="fab fa-github"></i>
                 </a>
             </div>
-            <section id="about" class="about content__section">
+            <section id="about" class="about content__section fade">
                 <h1 class="section__title">About me</h1>
                 <div class="about__info">
                     <div class="about__text">
                         <p class="paragrapgh">
-                            Hello! My name is Jakub, I knew from an early age that I would tie my
-                            future with IT. In the last years of my studies, I became interested in
-                            creating websites. I begin as Frontend Developer but my goal is to
-                            become Fullstack Developer in the future.
+                            Hello! My name is Jakub. I'm a computer science graduate and aspiring Fullstack Developer currently working as a Junior Developer at Szopex.
                         </p>
                         <p class="paragrapgh">
-                            I completed a three-month internship as a Frontend Web Developer at
-                            Primeo. During the internship, I learned a lot about teamwork on real
-                            projects for local clients and from abroad. Now when I finished my
-                            studies with a bachelor's degree in computer science I keep learning and
-                            looking for job. If you are intersted in my person
-                            <a href="#contact" class="text--primary link--primary">contact</a>
-                            with me.
+                            I completed a Frontend Developer internship at Primeo, where I gained experience working on real projects for clients. At Szopex, I work on e-commerce applications using Laravel.
+                            I'm always learning and looking for new opportunities.
                         </p>
                     </div>
                     <div class="about__image">
-                        <img src="./img/img.png" alt="Photograph" />
+                        <img src="./img/img.jpg" alt="Photograph" />
                     </div>
                 </div>
                 <div class="about__links">
@@ -129,7 +102,7 @@
                     </a>
                 </div>
             </section>
-            <section id="projects" class="projects content__section">
+            <section id="projects" class="projects content__section fade">
                 <h1 class="section__title" class="section__title">Some of my projects</h1>
                 <div class="projects__container">
                     <div class="projects__card">
@@ -139,11 +112,7 @@
                         <div class="card__info">
                             <h2 class="card__title">JS Arrays</h2>
                             <p>
-                                The task was to write a JavaScript script which, after clicking on
-                                the button, will generate 20 random integers from 1 to 100 and place
-                                them in two columns. One column should contain only even numbers and
-                                the other one odd numbers. Additionally, both columns must be sorted
-                                in ascending order.
+                                This app is a JavaScript program that generates a random array of integers and separates the odd and even numbers into two separate arrays. It then displays the original array and the two separated arrays on a webpage.
                             </p>
                             <div class="card__tech">
                                 <span class="card__tech--pointer">Tech stack</span>
@@ -174,11 +143,7 @@
                         <div class="card__info">
                             <h2 class="card__title">Book List</h2>
                             <p>
-                                The task was to write simple book list using HTML, CSS and
-                                JavaScript. After sending the form, the page cannot be reloaded.
-                                Simultaneously display the added book in the table, and clear the
-                                form. In case a field is not validated, the book cannot be added.
-                                The whole table is saved in localstorage.
+                                This app is a virtual book store that allows the user to add and remove books from a list, which is persisted in local storage. The app has a form for adding new books and displays a list of all the books in the store on the webpage. The app also has several classes for representing books, storing and manipulating the list of books, and validating and submitting the form.
                             </p>
                             <div class="card__tech">
                                 <span class="card__tech--pointer">Tech stack</span>
@@ -212,10 +177,7 @@
                         <div class="card__info">
                             <h2 class="card__title">Random Quote Generator</h2>
                             <p>
-                                The goal was to create an application that will retrieve quotes from
-                                the API, which will display a random quotation. Additionally I
-                                created a button that will allow to draw the next random quote and a
-                                button that will allow to return to the previous quote.
+                                This is a React.js app that displays a random quote and its author. The app stores the list of quotes in state and allows the user to navigate through the list by incrementing or decrementing the current index. The app also has a function that fetches a new random quote from a JSON file and adds it to the list.
                             </p>
                             <div class="card__tech">
                                 <span class="card__tech--pointer">Tech stack</span>
@@ -249,8 +211,7 @@
                         <div class="card__info">
                             <h2 class="card__title">Weather APP</h2>
                             <p>
-                                The goal was to create an simple application that will retrive
-                                weather data from API and display it.
+                                This is a React.js app that displays current and forecast weather data for a given location. The user can search for a location and toggle between displaying the weather data in Celsius or Fahrenheit.
                             </p>
                             <div class="card__tech">
                                 <span class="card__tech--pointer">Tech stack</span>
@@ -276,9 +237,9 @@
                     </div>
                 </div>
             </section>
-            <section id="contact" class="contact content__section">
+            <section id="contact" class="contact content__section fade">
                 <h1 class="section__title">Contact</h1>
-                Contact form will appear here soon for now you can reach me via
+                If you would like to get in touch, you can reach me via
                 <div class="contact__links">
                     <a href="mailto:jaqb1991@gmail.com" class="button--primary link--primary">
                         <i class="fas fa-at"></i>
