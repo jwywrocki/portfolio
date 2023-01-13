@@ -48,6 +48,7 @@ html {
     font-weight: 300;
     font-family: 'Josefin Sans', sans-serif;
     overflow-x: hidden;
+    transition: 250ms ease-in-out;
 }
 
 .preload,
@@ -410,6 +411,7 @@ footer {
     font-size: 1.5rem;
     padding: 2rem;
     background: var(--darkerBackgroundColor);
+    transition: 250ms ease-in-out;
 }
 @media (min-width: 576px) {
     html {
