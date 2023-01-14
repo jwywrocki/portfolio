@@ -7,7 +7,7 @@
     --font-color: #fafafa;
     --primaryColor: 0, 240, 255;
     --toggleBg: #ffffff;
-    --toggleColor: 0, 100, 255;
+    --toggleColor: 100, 0, 255;
     --navHeight: 6rem;
     --navHeightNegative: calc(-1 * var(--navHeight));
     --contentVerticalPadding: min(10vw, 10rem);
@@ -22,7 +22,7 @@
     --backgroundColor: #ffffff;
     --darkerBackgroundColor: #ffffff;
     --font-color: #4a4a4a;
-    --primaryColor: 0, 100, 255;
+    --primaryColor: 100, 0, 255;
     --toggleBg: #090f14;
     --toggleColor: 0, 240, 255;
 }
@@ -194,6 +194,7 @@ html {
 .button--primary {
     padding: 1.2rem;
     font-size: 1.5rem;
+    font-weight: 400;
     text-decoration: none;
     text-align: center;
     color: rgba(var(--primaryColor),1);
